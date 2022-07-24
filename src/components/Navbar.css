@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+#up{
+    list-style: none;
+    height: 16vh;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 50px;
+}
+
+.navbar-brand img{
+    height: 110px;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    margin: 3px;
+    color: white;
+    /* font-weight: bold; */
+}
+
+.navbar{
+    font-family: 'Bubblegum Sans', cursive;
+    margin: auto;
+    /* margin-top: 120px;  */
+    width: 80%;
+    display: grid;
+    border-radius: 10px;
+ 
+}
+
+
+
+.fb{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    color: black;
+    cursor: pointer;
+}
+.fb:hover{
+    color: rgb(69, 69, 236);
+    transform: scale(1.4);
+}
+.insta{
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    color: black;
+    cursor: pointer;
+}
+.insta:hover{
+    color: rgb(214, 93, 113);
+    transform: scale(1.4);
+    
+   }
+.twitter{
+    position: absolute;
+    right: 100px;
+    color: black;
+    top: 50px;
+    cursor: pointer;
+}
+.twitter:hover{
+    color: skyblue;
+    transform: scale(1.4);
+   }
+.linkedIn{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    color: black;
+   
+    cursor: pointer;
+}
+.linkedIn:hover{
+    color: rgb(0, 140, 255);
+    transform: scale(1.4);
+   }
+.fa-shopping-cart{
+    color: white;
+    position: absolute;
+    right: 45px;
+    cursor: pointer;
+}
+.fa-shopping-cart:hover{
+ color: yellow;
+}
+
+ul{
+    border: 2px solid white;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: yellow;
+    /* background-color: white; */
+    border-radius: 10px;
+    transform: scale(1.3);
+   
+}
+.nav-item{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+#cartSymbol{
+    margin-bottom: 30px;
+}
+
+
+#carouselExampleCaptions img{
+    width: 100%;
+    height:70vh;
+    opacity: 0.8;
+
+}
+
+/* ABOUT COMPONENT CSS */
+
+#about::before{
+    background: url('./about-header.jpg') no-repeat;
+    content: ".";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#about{
+    margin: 20px 0px;
+}
+
+
+
+#about-head{
+    padding: 20px;
+    width: 100%;
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 75px; 
+    
+    
+}
+
+.firstContent h2{
+    text-align: center;
+    color: red;
+    margin-top: 300px;
+}
+.firstContent p{
+    /* text-align: left; */
+    font-size: 25px;
+}
+
+.firstContent img{
+    height: 180px;
+}
+
+.secondContent{
+    display: grid;
+    margin-top: 60px;
+    grid-template-areas:
+    'head iframe iframe'
+    'para iframe iframe' ;
+}
+
+.secondContent h2{
+    grid-area: head;
+    font-size: 55px;
+    /* font-weight: bold; */
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 85px;
+    width: 400px;
+    margin: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background:linear-gradient(rgb(185, 194, 245),rgb(204, 90, 143))
+}
+
+.secondContent p{
+    grid-area: para;
+    width: 500px;
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
+}
+
+.secondContent iframe{
+    grid-area: iframe;
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.thirdContent{
+    /* background-image: linear-gradient(black,white); */
+    margin-top: 65px;
+    padding: 15px 0px;
+    
+}
+
+.thirdContent h2{
+    display: contents;
+    border-color: black;
+    color: red;
+    font-weight: bold;
+    font-size: 45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* 
+.thirdContent p::before{
+    background:url(./blackbg.jfif) no-repeat center/cover;
+    content: ".";
+    position: absolute;
+    left: 0px;
+    width: 70%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.9;
+} */
+
+.thirdContent p{
+    margin: 12px 200px;
+    font-size: 28px;
+    padding: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+   border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Shopping CSS */
+#ShopItem:hover{
+    transform: scale(0.97);
+    cursor: pointer;
+}
+
+
+/* SHOPITEM CSS */
+
+.fullCard{
+  width: 90vw;
+  overflow: hidden;
+  margin: auto;
+  
+}
+
+.ShopCard{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    justify-content: center;
+    font-family: 'Domine', serif; 
+    background: linear-gradient(45deg, rgb(30, 99, 179), transparent);
+    
+}
+
+
+.ShopCard #name{
+    grid-area: name;
+    font-size: 25px;
+  
+}
+
+#price{
+    grid-area: price;
+    font-size: 23px;
+    color: rgb(196, 21, 21);
+    font-weight: bold;
+    display: flex;
+    /* float: left; */
+}
+
+#brand{
+    grid-area: brand;
+    font-size: 17px;
+    font-weight: bold;
+    /* float: left; */
+    display: flex;
+    
+}
+
+#details{
+    grid-area: details;
+    /* float: left; */
+    display: flex;
+    left: 0;
+    
+}
+#cartBtn{
+    grid-area: cart;
+    border-radius: 0;
+    
+    
+    
+}
+#subBtn{
+    grid-area: Sub;
+    color: black;
+    
+}
+#addBtn{
+    grid-area: Add;
+    color: black;
+}
+#buyBtn{
+    grid-area: Buy;
+    color: black;
+}
+
+
+
+/* CART Component CSS */
+
+/* .Cart{
+    
+} */
+
+
+
+.singleItem{
+    /* grid-area: items; */
+    width: 370px;
+    border-radius: 23px;
+}
+
+.singleItem b{
+    background-color:aliceblue;
+    border-radius: 10px;
+    margin: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#deleteItem{
+    width: 60px;
+    margin: auto;
+}
+.singleItem .fa-trash{
+    cursor: pointer;
+}
+.singleItem .fa-trash:hover{
+    transform: scale(0.9);
+}
+
+
+
+#price-details{
+    /* grid-area: price; */
+    border: 2px solid black;
+    padding: 15px;
+    width: 400px;
+    height: 350px;
+    margin: 150px auto;
+    background-image: linear-gradient(skyblue,rgb(173, 166, 58));
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    border-radius: 10px;
+}
+#price-details h2{
+    margin: 0;
+    font-size: 23px;
+    float: left;
+    color: grey;
+}
+
+#finalPrice{
+    font-size: 18px;
+    margin: auto;
+    /* margin-top: 115px; */
+    border-radius: 12px;
+    float: left;
+ 
+}
+
+#finalPrice span{
+    display: flex;
+    left: 0px;
+}
+
+/* CheckOut Page CSS */
+
+#mainContainer{
+    display: grid;
+    grid-template-areas: 'details payment summary';
+    /* border: 2px solid black; */
+    margin: 50px 100px;
+}
+
+#detailsForm{
+    grid-area: details;
+    /* border: 2px solid red; */
+    margin: 10px;
+    padding: 10px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#detailsForm header{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+    height: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    width: 430px;
+    font-size: 20px;
+}
+
+#detailsForm label{
+    font-weight: bold;
+    display: flex;
+    float: left;
+    margin: 5px;
+}
+
+#detailsForm input{
+    margin: 5px;
+    margin-bottom: 13px;
+}
+
+#payment{
+    grid-area: payment;
+    /* border: 2px solid blue; */
+    margin: 10px;
+    padding: 10px;
+}
+#payment header{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+    height: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    width: 350px;
+    font-size: 20px;
+}
+
+#summary{
+    grid-area: summary;
+    /* border: 2px solid green; */
+    margin: 10px;
+    padding: 10px;
+}
+
+#summary header{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+    height: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    width: 350px;
+    font-size: 20px;
+}
+
+#summary #checkoutPrice {
+    border: 2px solid black;
+    padding: 15px;
+    /* width: 400px; */
+    height: 350px;
+    margin: 50px 12px;
+    background-image: linear-gradient(#ffffff,rgb(0, 108, 209));
+   font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    border-radius: 10px;
+  
+}
+#priceBox{
+    float: left;
+}
+
+#payNow-btn{
+    border: none;
+}
+
+#payNow-btn header:hover{
+    transform: scale(0.98);
+}
+
+
+/* TRAINING COMPONENT CSS */
+
+#training-img{
+    width: 98vw;
+    margin-top: 20px;
+}
+
+#train-head{
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: yellowgreen;
+    padding: 10px;
+    border: 2px solid rgb(255, 204, 0);
+    border-radius: 10px;
+}
+
+.train-typo{
+    font-size: 25px !important;
+}
+
+.accord-details{
+   background-color: #74afd6;
+   /* color: #ffffff; */
+  
+}
+
+/* Contact Page CSS */
+
+#contactPage::before{
+    background: url('./contactimg.jpg') no-repeat center/cover;
+    content: ".";
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    height: 99vh;
+    z-index: -1;
+    opacity: 0.3;
+    /* margin-top: 20px; */
+}
+
+#contactPage{
+    /* display: grid; */
+    /* grid-template-areas: 'contact-head contact-head'
+    'contactImg contact'; */
+}
+/* #contact-head::before{
+    background: url('./contactImg2.jpg') no-repeat center/cover;
+    content: ".";
+    position: absolute;
+    left: 0px;
+    width: 30vw;
+    height: 15vh;
+    z-index: -1;
+    opacity: 0.7;
+} */
+#contact{
+    grid-area: contact;
+}
+
+#contact-head{
+     font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    /* background-color: black; */
+    color:black;
+    /* border: 3px solid black; */
+    border-radius: 15px;
+    padding: 14px;
+    width: 30%;
+    justify-content: center;
+    margin: 30px auto;
+
+}
+#contact-form{
+ margin: 10px 450px;
+ background-color: rgb(0, 0, 0);
+ color: #ffffff;
+ border-radius: 15px;
+ padding: 40px;
+ 
+}
+
+#contact-form label{
+    font-size: 20px;
+}
+#contact-form input,textarea{
+    border: 2px solid black;
+}
+
+#form label,input,textarea{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
